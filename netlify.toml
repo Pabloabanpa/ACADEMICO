@@ -1,0 +1,9 @@
+[build]
+  # Comando para instalar dependencias y compilar assets
+  command   = "npm ci && npm run build"
+  # Carpeta que Netlify servirá como sitio estático
+  publish   = "public"
+
+[build.environment]
+  # Si tu Vite quiere apuntar al URL de tu backend, aquí podrías definir:
+  # VITE_APP_BACKEND_URL = "https://tu-backend.example.com"

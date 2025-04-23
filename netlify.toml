@@ -1,3 +1,5 @@
+# netlify.toml
+
 [build]
   # Comando para instalar dependencias y compilar assets
   command   = "npm ci && npm run build"
@@ -5,5 +7,12 @@
   publish   = "public"
 
 [build.environment]
-  # Si tu Vite quiere apuntar al URL de tu backend, aquí podrías definir:
+  # Si tu Vite necesita apuntar al URL de tu backend, aquí podrías definir:
   # VITE_APP_BACKEND_URL = "https://tu-backend.example.com"
+
+# --- Esto es lo que añade el fallback para SPA ---
+[[redirects]]
+  from    = "/*"         # coincide con cualquier URL
+  to      = "/index.html"  # redirígela siempre a index.html
+  status  = 200          # con código 200 (no 301/302)
+  force   = true         # fuerza siempre esta regla

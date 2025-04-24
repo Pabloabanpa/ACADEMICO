@@ -69,11 +69,11 @@
 
           <tr class="hover:bg-gray-100">
             <td class="p-3">MATEMÁTICA FINANCIERA</td>
+            <td class="p-3">11</td>
+            <td class="p-3">20</td>
+            <td class="p-3">10</td>
             <td class="p-3">0</td>
-            <td class="p-3">0</td>
-            <td class="p-3">0</td>
-            <td class="p-3">0</td>
-            <td class="p-3">71</td>
+            <td class="p-3">30</td>
             <td class="p-3">71</td>
           </tr>
           <tr class="hover:bg-gray-100">
